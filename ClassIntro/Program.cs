@@ -9,7 +9,7 @@ namespace ClassIntro
             string adi = "Engin";
             int yas = 36;
 
-            Kurs kurs1 = new Kurs();
+            Kurs kurs1 = new Kurs(); //Class’ın değişkenini ayarlamak için yapacağın hareket bu.
             kurs1.KursAdi = "C#";
             kurs1.Egitmen = "Engin Demioğ";
             kurs1.IzlenmeOrani = 68;
@@ -27,7 +27,7 @@ namespace ClassIntro
 
             //Console.WriteLine(kurs1.KursAdi + ":" + kurs1.Egitmen);
 
-            Kurs[] kurslar = new Kurs[] {kurs1, kurs2, kurs3 };
+            Kurs[] kurslar = new Kurs[] {kurs1, kurs2, kurs3 }; // böyle yaparsan içinde Kurs tutabilirsin bir öncekinde içinde sadece string tutabilirsin. string[] kurslar = new string[] {"Yazılım Geliştirici Yetiştirme Kampı","Programlama başlangıç için temel kurs" ,"Java", "python", "C#"};
 
             foreach (var kurs in kurslar) // kurs burda takma isim
             {
@@ -39,9 +39,9 @@ namespace ClassIntro
         }
     }
 
-    class Kurs  // class yaz iki kere tab tuşuna bas
+    class Kurs  // class yaz iki kere tab tuşuna bas,  Bir class oluşturmak için yapacağın hareket bu
     {
-        public string KursAdi { get; set; } // prop yaz iki kere tab
+        public string KursAdi { get; set; } // prop yaz iki kere tab , prop; property den geliyor. özellik
         public string Egitmen { get; set; }
         public int IzlenmeOrani { get; set; }
     }

@@ -6,15 +6,15 @@ namespace Metotlar
 {
     class SepetManager
     {
-        // naming convention
-        //syntax
-        public void Ekle(Urun urun) // pythonda ki def
+        // naming convention - isimlendirme
+        //syntax - yazım şekilleri
+        public void Ekle(Urun urun) // pythonda ki def. Ekle yi çağırınca bloğun içi çağrılır. Urunler 'e parametre diyoruz.
         {
             Console.WriteLine("Tebrikler. Sepete eklendi! : " + urun.Adi);
 
         }
 
-        public void Ekle2(string urunAdi, string aciklama, double fiyat, int StokAdedi) // bu iyi bir yazma şekli değil.
+        public void Ekle2(string urunAdi, string aciklama, double fiyat, int stokAdedi) // bu iyi bir yazma şekli değil.
         {
         Console.WriteLine("Tebrikler.Sepete eklendi! : " +urunAdi);
         }
